@@ -1,0 +1,90 @@
+.blok {
+  padding: 100px 0px 0px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    .blok__title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      p {
+        font-family: Manrope;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 54.64px;
+        color: #454545;
+      }
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        max-width: 220px;
+        height: 50px;
+        border: 1px solid rgb(69, 69, 69);
+        border-radius: 100px;
+        color: rgb(69, 69, 69);
+        font-family: Manrope;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: -1px;
+        letter-spacing: 0%;
+        background-color: transparent;
+        svg {
+          color: rgb(69, 69, 69);
+          font-size: 15px;
+        }
+      }
+    }
+    .blok__cards {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(3, 1fr);
+      .blok__card {
+        width: 100%;
+        max-width: 420px;
+        display: flex;
+        flex-direction: column;
+        img {
+          width: 100%;
+          object-fit: contain;
+        }
+        &__content {
+          padding: 30px 20px 32px 0px;
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          .card__top {
+            display: flex;
+            justify-content: space-between;
+            p {
+              width: 100%;
+              max-width: 310px;
+              height: 52px;
+              color: rgb(69, 69, 69);
+              font-family: Manrope;
+              font-size: 20px;
+              font-weight: 700;
+              line-height: 130%;
+              letter-spacing: 0%;
+            }
+            svg {
+              font-size: 30px;
+              color: rgb(69, 69, 69);
+            }
+          }
+          span {
+            color: rgb(69, 69, 69);
+            font-family: Manrope;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 110%;
+            letter-spacing: 0%;
+          }
+        }
+      }
+    }
+  }
+}

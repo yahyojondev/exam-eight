@@ -1,0 +1,87 @@
+.katolog {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    .katolog__title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      p {
+        font-family: Manrope;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 54.64px;
+        color: #454545;
+      }
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        max-width: 220px;
+        height: 50px;
+        border: 1px solid rgb(69, 69, 69);
+        border-radius: 100px;
+        color: rgb(69, 69, 69);
+        font-family: Manrope;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: -1px;
+        letter-spacing: 0%;
+        background-color: transparent;
+        svg {
+          color: rgb(69, 69, 69);
+          font-size: 15px;
+        }
+      }
+    }
+    .katolog__cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      .katolog__card {
+        padding: 19px 32px 25px 32px;
+        width: 100%;
+        max-width: 420px;
+        height: 250px;
+        background-color: #f2f2f2;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        .card__title {
+          padding-top: 13px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          p {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 22px;
+            font-family: Manrope;
+            color: #454545;
+          }
+          span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 15.4px;
+            font-family: Manrope;
+            color: #454545;
+            svg {
+              color: #9b9595;
+            }
+          }
+        }
+        img {
+          width: 100%;
+          max-width: 180px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}

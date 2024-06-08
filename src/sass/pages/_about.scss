@@ -1,0 +1,70 @@
+.about {
+  padding: 100px 0px;
+  &__wrapper {
+    display: flex;
+    gap: 102px;
+    .about__left {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      p {
+        color: rgb(69, 69, 69);
+        font-family: Manrope;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: -1px;
+        letter-spacing: 0%;
+      }
+      .about__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .about__card {
+          display: flex;
+          flex-direction: column;
+          gap: 83px;
+          padding: 32px 0px 32px 32px;
+          border-radius: 10px;
+          width: 100%;
+          width: 530px;
+          height: 253px;
+          background: rgb(242, 242, 242);
+          p {
+            color: rgb(69, 69, 69);
+            font-family: Manrope;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 110%;
+            letter-spacing: 0%;
+          }
+          span {
+            color: rgb(69, 69, 69);
+            font-family: Manrope;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 150%;
+            letter-spacing: 0%;
+          }
+        }
+      }
+    }
+    .about__right {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width: 100%;
+      max-width: 500px;
+      p {
+        color: rgb(69, 69, 69);
+        font-family: Manrope;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: 0%;
+      }
+    }
+  }
+}
+.about__blok {
+  padding-bottom: 120px;
+}
