@@ -3,33 +3,57 @@
   background: #f2f2f2;
   &__wrapper {
     display: flex;
-    gap: 130px;
+    flex-direction: column;
+    // gap: 130px;
+    gap: 20px;
+    @media only screen and (min-width: 1100px) {
+      flex-direction: row;
+      gap: 50px;
+    }
+    @media only screen and (min-width: 1200px) {
+      gap: 130px;
+    }
     &__left {
       display: flex;
-      gap: 146px;
+      flex-direction: column;
+      gap: 20px;
+      @media only screen and (min-width: 640px) {
+        flex-direction: row;
+        gap: 146px;
+      }
       .footer__left__left {
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 24px;
+        @media only screen and (min-width: 550px) {
+          gap: 50px;
+        }
         .footer__left__title__wrapper {
           display: flex;
           align-items: center;
           gap: 7px;
           svg {
-            width: 36px;
-            height: 36px;
+            width: 24px;
+            height: 24px;
             background-color: rgb(69, 69, 69);
             color: #fff;
             border-radius: 3px;
             padding: 5px;
+            @media only screen and (min-width: 550px) {
+              width: 36px;
+              height: 36px;
+            }
           }
           p {
             color: rgb(69, 69, 69);
             font-family: Inter;
-            font-size: 40px;
+            font-size: 20px;
             font-weight: 400;
             line-height: 48px;
             letter-spacing: 0%;
+            @media only screen and (min-width: 550px) {
+              font-size: 40px;
+            }
           }
         }
         .footer__left__left__content {
@@ -39,7 +63,8 @@
           span {
             color: rgb(69, 69, 69);
             font-family: Manrope;
-            font-size: 24px;
+            // font-size: 24px;
+            font-size: 22px;
             font-weight: 600;
             line-height: -1px;
             letter-spacing: 0%;
@@ -105,8 +130,12 @@
     }
     &__right {
       display: flex;
-      gap: 62px;
-      //   align-items: center;
+      flex-direction: column;
+      gap: 20px;
+      @media only screen and (min-width: 640px) {
+        flex-direction: row;
+        gap: 62px;
+      }
       .footer__right__left {
         display: flex;
         flex-direction: column;
