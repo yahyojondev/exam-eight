@@ -2,18 +2,31 @@
   padding: 100px 0px;
   &__wrapper {
     display: flex;
-    gap: 102px;
+    flex-direction: column;
+    gap: 24px;
+    @media only screen and (min-width: 1000px) {
+      flex-direction: row;
+    }
+    @media only screen and (min-width: 1280px) {
+      justify-content: space-between;
+    }
     .about__left {
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 20px;
+      @media only screen and (min-width: 660px) {
+        gap: 30px;
+      }
       p {
         color: rgb(69, 69, 69);
         font-family: Manrope;
-        font-size: 40px;
+        font-size: 28px;
         font-weight: 700;
         line-height: -1px;
         letter-spacing: 0%;
+        @media only screen and (min-width: 660px) {
+          font-size: 40px;
+        }
       }
       .about__cards {
         display: flex;
@@ -26,9 +39,11 @@
           padding: 32px 0px 32px 32px;
           border-radius: 10px;
           width: 100%;
-          width: 530px;
           height: 253px;
           background: rgb(242, 242, 242);
+          @media only screen and (min-width: 660px) {
+            width: 530px;
+          }
           p {
             color: rgb(69, 69, 69);
             font-family: Manrope;
