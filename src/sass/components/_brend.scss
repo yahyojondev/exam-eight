@@ -12,15 +12,21 @@
       p {
         color: rgb(69, 69, 69);
         font-family: Manrope;
-        font-size: 40px;
+        font-size: 28px;
         font-weight: 700;
         line-height: -1px;
         letter-spacing: 0%;
+        @media only screen and (min-width: 700px) {
+          font-size: 40px;
+        }
       }
       .navigate__wrapper {
-        display: flex;
+        display: none;
         align-items: center;
         gap: 10px;
+        @media only screen and (min-width: 660px) {
+          display: flex;
+        }
         svg {
           width: 39px;
           height: 26px;
@@ -50,5 +56,34 @@
         }
       }
     }
+  }
+}
+#brend__swiper__two {
+  display: none;
+  @media only screen and (min-width: 400px) {
+    display: flex;
+  }
+  @media only screen and (min-width: 780px) {
+    display: none;
+  }
+}
+#brend__swiper__one {
+  @media only screen and (min-width: 400px) {
+    display: none;
+  }
+}
+#brend__swiper__three {
+  display: none;
+  @media only screen and (min-width: 780px) {
+    display: flex;
+  }
+  @media only screen and (min-width: 1000px) {
+    display: none;
+  }
+}
+#brend__swiper__four {
+  display: none;
+  @media only screen and (min-width: 1000px) {
+    display: flex;
   }
 }

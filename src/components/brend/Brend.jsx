@@ -22,6 +22,102 @@ const Brend = () => {
           <div className="brend__swiper">
             <Swiper
               spaceBetween={20}
+              slidesPerView={1}
+              centeredSlides={true}
+              loop={true}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              modules={[Autoplay]}
+              className="mySwiper "
+              id="brend__swiper__one"
+            >
+              <SwiperSlide className="swiper__slide">
+                <img src={brendimg1} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper__slide">
+                <img src={brendimg2} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper__slide">
+                <img src={brendimg3} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper__slide">
+                <img src={brendimg4} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper__slide">
+                <img src={brendimg3} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper__slide">
+                <img src={brendimg1} alt="" />
+              </SwiperSlide>
+            </Swiper>
+            <Swiper
+              spaceBetween={20}
+              slidesPerView={2}
+              centeredSlides={true}
+              loop={true}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              modules={[Autoplay]}
+              className="mySwiper"
+              id="brend__swiper__two"
+            >
+              <SwiperSlide className="swiper__slide">
+                <img src={brendimg1} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper__slide">
+                <img src={brendimg2} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper__slide">
+                <img src={brendimg3} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper__slide">
+                <img src={brendimg4} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper__slide">
+                <img src={brendimg3} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper__slide">
+                <img src={brendimg1} alt="" />
+              </SwiperSlide>
+            </Swiper>
+            <Swiper
+              spaceBetween={20}
+              slidesPerView={3}
+              centeredSlides={true}
+              loop={true}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              modules={[Autoplay]}
+              className="mySwiper"
+              id="brend__swiper__three"
+            >
+              <SwiperSlide className="swiper__slide">
+                <img src={brendimg1} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper__slide">
+                <img src={brendimg2} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper__slide">
+                <img src={brendimg3} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper__slide">
+                <img src={brendimg4} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper__slide">
+                <img src={brendimg3} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper__slide">
+                <img src={brendimg1} alt="" />
+              </SwiperSlide>
+            </Swiper>
+            <Swiper
+              spaceBetween={20}
               slidesPerView={4}
               centeredSlides={true}
               loop={true}
@@ -31,6 +127,7 @@ const Brend = () => {
               }}
               modules={[Autoplay]}
               className="mySwiper"
+              id="brend__swiper__four"
             >
               <SwiperSlide className="swiper__slide">
                 <img src={brendimg1} alt="" />

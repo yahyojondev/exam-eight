@@ -2,6 +2,7 @@ import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { GoArrowUpRight } from "react-icons/go";
 import { blokproducts } from "../../static/router";
+import { NavLink } from "react-router-dom";
 
 const Blok = () => {
   const blokitem = blokproducts?.map((el) => (
@@ -24,10 +25,12 @@ const Blok = () => {
         <div className="blok__wrapper">
           <div className="blok__title">
             <p>Блог</p>
-            <button>
-              Перейти в блог
-              <FaArrowRightLong />
-            </button>
+            <NavLink to={"/blog"} className="blok__btn">
+              <button className="blok__btn">
+                Перейти в блог
+                <FaArrowRightLong />
+              </button>
+            </NavLink>
           </div>
           <div className="blok__cards">{blokitem}</div>
         </div>

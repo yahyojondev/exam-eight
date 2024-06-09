@@ -10,9 +10,12 @@
       p {
         font-family: Manrope;
         font-weight: 700;
-        font-size: 40px;
+        font-size: 28px;
         line-height: 54.64px;
         color: #454545;
+        @media only screen and (min-width: 640px) {
+          font-size: 40px;
+        }
       }
       .katolog__btn {
         display: none;

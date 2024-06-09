@@ -10,12 +10,15 @@
       p {
         font-family: Manrope;
         font-weight: 700;
-        font-size: 40px;
+        font-size: 28px;
         line-height: 54.64px;
         color: #454545;
+        @media only screen and (min-width: 700px) {
+          font-size: 40px;
+        }
       }
-      button {
-        display: flex;
+      .blok__btn {
+        display: none;
         align-items: center;
         justify-content: center;
         gap: 10px;
@@ -31,6 +34,9 @@
         line-height: -1px;
         letter-spacing: 0%;
         background-color: transparent;
+        @media only screen and (min-width: 660px) {
+          display: flex;
+        }
         svg {
           color: rgb(69, 69, 69);
           font-size: 15px;
@@ -40,7 +46,13 @@
     .blok__cards {
       display: grid;
       gap: 20px;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(1, 1fr);
+      @media only screen and (min-width: 650px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media only screen and (min-width: 1000px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
       .blok__card {
         width: 100%;
         max-width: 420px;

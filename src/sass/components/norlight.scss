@@ -11,12 +11,15 @@
       p {
         font-family: Manrope;
         font-weight: 700;
-        font-size: 40px;
+        font-size: 28px;
         line-height: 54.64px;
         color: #454545;
+        @media only screen and (min-width: 700px) {
+          font-size: 40px;
+        }
       }
       button {
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
         gap: 10px;
@@ -36,32 +39,61 @@
           color: rgb(69, 69, 69);
           font-size: 15px;
         }
+        @media only screen and (min-width: 660px) {
+          display: flex;
+        }
       }
     }
     .norlight__cards {
       display: grid;
       gap: 15px;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      @media only screen and (min-width: 500px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      @media only screen and (min-width: 700px) {
+        grid-template-columns: repeat(4, 1fr);
+      }
       .norlight__card {
         width: 100%;
-        max-width: 310px;
-        padding: 40px 26px 47px 40px;
+        // max-width: 310px;
+        padding: 16px;
         display: flex;
         flex-direction: column;
-        gap: 70px;
+        height: 233px;
+        gap: 10px;
         border: 1px solid rgb(217, 217, 217);
+        @media only screen and (min-width: 800px) {
+          padding: 20px 13xp 22px 20px;
+        }
+        @media only screen and (min-width: 1000px) {
+          padding: 40px 26px 47px 40px;
+          gap: 70px;
+          max-width: 310px;
+          height: 360px;
+        }
+        @media only screen and (min-width: 1320px) {
+        }
         &__img__wrapper {
-          width: 70px;
-          height: 70px;
+          width: 40px;
+          height: 40px;
           display: flex;
           align-items: center;
           justify-content: center;
           background: #454545;
           border-radius: 10px;
+          @media only screen and (min-width: 1000px) {
+            width: 70px;
+            height: 70px;
+          }
           img {
-            width: 50px;
-            height: 50px;
+            width: 24px;
+            height: 24px;
             object-fit: contain;
+            @media only screen and (min-width: 1000px) {
+              width: 50px;
+              height: 50px;
+            }
           }
         }
         &__content {
@@ -74,10 +106,13 @@
             height: 52px;
             color: rgb(69, 69, 69);
             font-family: Manrope;
-            font-size: 20px;
+            font-size: 16px;
             font-weight: 700;
             line-height: 130%;
             letter-spacing: 0%;
+            @media only screen and (min-width: 1000px) {
+              font-size: 20px;
+            }
           }
           span {
             width: 100%;
@@ -86,10 +121,13 @@
             opacity: 0.5;
             color: rgb(69, 69, 69);
             font-family: Manrope;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 400;
             line-height: 130%;
             letter-spacing: 0%;
+            @media only screen and (min-width: 1000px) {
+              font-size: 16px;
+            }
           }
         }
       }
