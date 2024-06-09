@@ -7,32 +7,44 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  // height: 500px;
   height: 527px;
   background: #f2f2f2;
   border-radius: 50px;
+  @media only screen and (min-width: 650px) {
+    height: 350px;
+  }
+  @media only screen and (min-width: 800px) {
+    height: 500px;
+  }
   .hero__slide {
     .slide__wrapper {
       display: flex;
       flex-direction: column-reverse;
-      // justify-content: space-between;
       align-items: center;
       gap: 20px;
+      @media only screen and (min-width: 650px) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
     }
     &__left {
-      // padding: 52px 0px 96px;
       display: flex;
       flex-direction: column;
-      // gap: 20px;
+      @media only screen and (min-width: 800px) {
+        padding: 52px 0px 96px;
+        gap: 20px;
+      }
       h1 {
         width: 100%;
         max-width: 570px;
         font-family: Manrope;
-        // font-size: 55px;
         font-weight: 700;
         line-height: -1px;
         letter-spacing: 0%;
         color: rgb(69, 69, 69);
+        @media only screen and (min-width: 800px) {
+          font-size: 55px;
+        }
       }
       button {
         color: rgb(255, 255, 255);
@@ -40,13 +52,10 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        // max-width: 400px;
         max-width: 208px;
-        // height: 75px;
         height: 45px;
         border-radius: 100px;
         font-family: Manrope;
-        // font-size: 45px;
         font-size: 20px;
         font-weight: 700;
         line-height: -1px;
@@ -54,16 +63,23 @@
         background-color: rgb(69, 69, 69);
         border: none;
         outline: none;
+        @media only screen and (min-width: 800px) {
+          max-width: 400px;
+          height: 75px;
+          font-size: 45px;
+        }
       }
     }
     img {
-      // width: 100%;
-      // max-width: 453px;
-      // height: 453px;
-      // object-fit: contain;
       width: 275px;
       height: 275px;
       object-fit: contain;
+      @media only screen and (min-width: 1200px) {
+        width: 100%;
+        max-width: 453px;
+        height: 453px;
+        object-fit: contain;
+      }
     }
   }
 }
