@@ -13,7 +13,11 @@ import Product from "./pages/product/index";
 import Return from "./pages/return/index";
 import Contact from "./pages/contact/index";
 import Favorite from "./pages/favorite/index";
-
+import Admin from "./pages/admin/Admin";
+import CreateProduct from "./pages/admin/createProduct/CreateProduct";
+import ManageProduct from "./pages/admin/manageProduct/ManageProduct";
+import CreateCategory from "./pages/admin/createCategory/CreateCategory";
+import ManageCategory from "./pages/admin/manageCategory/ManageCategory";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -36,6 +40,12 @@ function App() {
           <Route path="/return" element={<Return />} />
           <Route path="/product/:id" element={<SingleRoute />} />
           <Route path="*" element={<NotFound />} />
+        </Route>
+        <Route path="/admin" element={<Admin />}>
+          <Route path="createProduct" element={<CreateProduct />} />
+          <Route path="manageProduct" element={<ManageProduct />} />
+          <Route path="createCategory" element={<CreateCategory />} />
+          <Route path="manageCategory" element={<ManageCategory />} />
         </Route>
       </Routes>
     </div>

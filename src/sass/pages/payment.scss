@@ -1,4 +1,7 @@
 .payment {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
   padding: 100px 0px 120px;
   &__wrapper {
     display: flex;
@@ -48,8 +51,9 @@
         }
       }
     }
-    iframe {
-      border-radius: 20px;
-    }
+  }
+  iframe {
+    border: none;
+    border-radius: 20px;
   }
 }

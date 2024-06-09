@@ -1,6 +1,7 @@
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { katolofproducts } from "../../static/router";
+import { NavLink } from "react-router-dom";
 
 const Katolog = () => {
   const katologitem = katolofproducts?.map((el) => (
@@ -22,10 +23,12 @@ const Katolog = () => {
         <div className="katolog__wrapper">
           <div className="katolog__title">
             <p>Каталог</p>
-            <button>
-              Весь каталог
-              <FaArrowRightLong />
-            </button>
+            <NavLink className="katolog__btn" to={"/catolog"}>
+              <button className="katolog__btn">
+                Весь каталог
+                <FaArrowRightLong />
+              </button>
+            </NavLink>
           </div>
           <div className="katolog__cards">{katologitem}</div>
         </div>

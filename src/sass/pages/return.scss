@@ -2,7 +2,7 @@
   padding: 100px 0px 120px;
   &__wrapper {
     display: flex;
-    gap: 341px;
+    justify-content: space-between;
     .return__title {
       color: rgb(69, 69, 69);
       font-family: Manrope;

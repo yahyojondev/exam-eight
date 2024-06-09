@@ -4,6 +4,11 @@ import katologimg3 from "../assets/images/katolog3.png";
 import katologimg4 from "../assets/images/katolog4.png";
 import katologimg5 from "../assets/images/katolog5.png";
 import katologimg6 from "../assets/images/katolog6.png";
+import katologimg7 from "../assets/images/katalog7.png";
+import katologimg8 from "../assets/images/katalog8.png";
+import katologimg9 from "../assets/images/katalog9.png";
+import katologimg10 from "../assets/images/katalog10.png";
+import katologimg11 from "../assets/images/katalog11.png";
 import norlightimg1 from "../assets/images/norlight1.png";
 import norlightimg2 from "../assets/images/norlight2.png";
 import norlightimg3 from "../assets/images/norlight3.png";
@@ -114,5 +119,74 @@ export const aboutproducts = [
     id: 1,
     title: "170+ ",
     text: "Товаров",
+  },
+];
+
+export const catolofproducts = [
+  {
+    id: 1,
+    img: katologimg1,
+    title: "Люстры",
+    text: "От 540₽",
+  },
+  {
+    id: 2,
+    img: katologimg2,
+    title: "Светильники",
+    text: "От 540₽",
+  },
+  {
+    id: 3,
+    img: katologimg3,
+    title: "Бра",
+    text: "От 540₽",
+  },
+  {
+    id: 4,
+    img: katologimg4,
+    title: "Торшеры",
+    text: "От 540₽",
+  },
+  {
+    id: 5,
+    img: katologimg5,
+    title: "Настольные лампы",
+    text: "От 540₽",
+  },
+  {
+    id: 6,
+    img: katologimg6,
+    title: "Споты",
+    text: "От 540₽",
+  },
+  {
+    id: 7,
+    img: katologimg7,
+    title: "Трековые светильники",
+    text: "От 540₽",
+  },
+  {
+    id: 8,
+    img: katologimg8,
+    title: "Уличные светильники",
+    text: "От 540₽",
+  },
+  {
+    id: 9,
+    img: katologimg9,
+    title: "Технические светильники",
+    text: "От 540₽",
+  },
+  {
+    id: 10,
+    img: katologimg10,
+    title: "Светодиодные ленты",
+    text: "От 540₽",
+  },
+  {
+    id: 11,
+    img: katologimg11,
+    title: "Комплектуюшие",
+    text: "От 540₽",
   },
 ];

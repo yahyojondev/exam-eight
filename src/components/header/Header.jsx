@@ -5,6 +5,8 @@ import { IoSearchOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
 import { AiFillSignal } from "react-icons/ai";
 import { BsCart } from "react-icons/bs";
+import { NavLink } from "react-router-dom";
+import { AiOutlineAlignRight } from "react-icons/ai";
 
 const Header = () => {
   const [see, setSee] = useState("");
@@ -12,12 +14,15 @@ const Header = () => {
     <div className="navbar">
       <div className="container">
         <div className="navbar__wrapper">
-          <div className="navbar__left">
-            <div className="navbar__left__loader">
-              <FiLoader />
+          <NavLink className="to__home" to={"/"}>
+            <AiOutlineAlignRight />
+            <div className="navbar__left">
+              <div className="navbar__left__loader">
+                <FiLoader />
+              </div>
+              <p>NORNLIGHT</p>
             </div>
-            <p>NORNLIGHT</p>
-          </div>
+          </NavLink>
           <div className="navbar__center">
             <button>
               <HiMiniBars3CenterLeft />
@@ -46,6 +51,8 @@ const Header = () => {
               <BsCart />
               <span>Корзина</span>
             </div>
+            <FaRegHeart className="navbar__right__svg" />
+            <BsCart className="navbar__right__svg" />
           </div>
         </div>
       </div>
