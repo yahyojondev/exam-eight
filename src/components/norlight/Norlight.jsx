@@ -26,7 +26,13 @@ const Norlight = () => {
               <FaArrowRightLong />
             </button>
           </div>
-          <div className="norlight__cards">{norlightitem}</div>
+          <div className="norlight__cads__to">
+            <div className="norlight__cards">{norlightitem}</div>
+            <button>
+              О компании
+              <FaArrowRightLong />
+            </button>
+          </div>
         </div>
       </div>
     </div>
