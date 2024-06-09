@@ -1,3 +1,6 @@
 .catolog {
-  padding: 85px 0px 90px;
+  padding: 50px 0px;
+  @media only screen and (min-width: 660px) {
+    padding: 85px 0px 90px;
+  }
 }

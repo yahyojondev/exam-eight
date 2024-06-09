@@ -1,16 +1,23 @@
 .blog {
   display: flex;
   flex-direction: column;
-  gap: 60px;
-  padding: 100px 0px 60px;
+  gap: 32px;
+  padding: 50px 0px;
+  @media only screen and (min-width: 660px) {
+    padding: 100px 0px 60px;
+    gap: 60px;
+  }
   &__wrapper {
     p {
       color: rgb(69, 69, 69);
       font-family: Manrope;
-      font-size: 64px;
+      font-size: 28px;
       font-weight: 700;
       line-height: 110%;
       letter-spacing: 0%;
+      @media only screen and (min-width: 660px) {
+        font-size: 64px;
+      }
     }
   }
 }

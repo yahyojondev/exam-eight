@@ -1,15 +1,26 @@
 .return {
-  padding: 100px 0px 120px;
+  padding: 50px 0px;
+  @media only screen and (min-width: 660px) {
+    padding: 100px 0px 120px;
+  }
   &__wrapper {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 32px;
+    @media only screen and (min-width: 1000px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
     .return__title {
       color: rgb(69, 69, 69);
       font-family: Manrope;
-      font-size: 64px;
+      font-size: 28px;
       font-weight: 700;
       line-height: 110%;
       letter-spacing: 0%;
+      @media only screen and (min-width: 660px) {
+        font-size: 64px;
+      }
     }
     .return__right {
       &__wrapper {

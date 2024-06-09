@@ -97,10 +97,10 @@ const Header = () => {
               <a href="/blog">Блог</a>
             </li>
             <li>
-              <button className="media__btn">
+              <a href="/catolog" className="media__btn">
                 <HiMiniBars3CenterLeft />
                 Каталог
-              </button>
+              </a>
             </li>
             <li className="media__item">
               <a href="">8 (800) 890-46-56</a>
