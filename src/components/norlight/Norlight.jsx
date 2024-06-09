@@ -1,6 +1,7 @@
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { norlightproducts } from "../../static/router";
+import { NavLink } from "react-router-dom";
 
 const Norlight = () => {
   const norlightitem = norlightproducts?.map((el) => (
@@ -21,17 +22,17 @@ const Norlight = () => {
         <div className="norlight__wrapper">
           <div className="norlight__title">
             <p>Почему NORNLIGHT?</p>
-            <button>
+            <NavLink to={"/about"} className="about__tobtn">
               О компании
               <FaArrowRightLong />
-            </button>
+            </NavLink>
           </div>
           <div className="norlight__cads__to">
             <div className="norlight__cards">{norlightitem}</div>
-            <button>
+            <NavLink to={"/about"} className="norlight__btn">
               О компании
               <FaArrowRightLong />
-            </button>
+            </NavLink>
           </div>
         </div>
       </div>

@@ -4,6 +4,7 @@ import Brend from "../../components/brend/Brend";
 import Blok from "../../components/blok/Blok";
 
 const About = () => {
+  window.scrollTo(0, 0);
   const aboutitem = aboutproducts?.map((el) => (
     <div key={el.id} className="about__card">
       <p>{el.title}</p>
