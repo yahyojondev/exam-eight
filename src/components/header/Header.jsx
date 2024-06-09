@@ -70,47 +70,45 @@ const Header = () => {
       </div>
       {see ? (
         <div className="navbar__burger__media">
-          <div className="container">
-            <button
-              value={see}
-              onClick={(e) => setSee((p) => !p)}
-              className="close__burger"
-            >
-              <AiOutlineClose className="close" />
-            </button>
-            <ul className="navbar__burger__list">
-              <li className="media__item">
-                <a href="/about">О компании</a>
-              </li>
-              <li className="media__item">
-                <a href="/payment">Доставка и оплата</a>
-              </li>
-              <li className="media__item">
-                <a href="/return">Возврат</a>
-              </li>
-              <li className="media__item">
-                <a href="/garant">Гарантии</a>
-              </li>
-              <li className="media__item">
-                <a href="/contact">Контакты</a>
-              </li>
-              <li className="media__item">
-                <a href="/blog">Блог</a>
-              </li>
-              <li>
-                <button className="media__btn">
-                  <HiMiniBars3CenterLeft />
-                  Каталог
-                </button>
-              </li>
-              <li className="media__item">
-                <a href="">8 (800) 890-46-56</a>
-              </li>
-              <li className="media__item">
-                <a href="">Заказать звонок</a>
-              </li>
-            </ul>
-          </div>
+          <button
+            value={see}
+            onClick={(e) => setSee((p) => !p)}
+            className="close__burger"
+          >
+            <AiOutlineClose className="close" />
+          </button>
+          <ul className="navbar__burger__list">
+            <li className="media__item">
+              <a href="/about">О компании</a>
+            </li>
+            <li className="media__item">
+              <a href="/payment">Доставка и оплата</a>
+            </li>
+            <li className="media__item">
+              <a href="/return">Возврат</a>
+            </li>
+            <li className="media__item">
+              <a href="/garant">Гарантии</a>
+            </li>
+            <li className="media__item">
+              <a href="/contact">Контакты</a>
+            </li>
+            <li className="media__item">
+              <a href="/blog">Блог</a>
+            </li>
+            <li>
+              <button className="media__btn">
+                <HiMiniBars3CenterLeft />
+                Каталог
+              </button>
+            </li>
+            <li className="media__item">
+              <a href="">8 (800) 890-46-56</a>
+            </li>
+            <li className="media__item">
+              <a href="">Заказать звонок</a>
+            </li>
+          </ul>
         </div>
       ) : (
         <></>
