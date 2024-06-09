@@ -5,6 +5,7 @@ import Norlight from "../../components/norlight/Norlight";
 import Brend from "../../components/brend/Brend";
 import Blok from "../../components/blok/Blok";
 import Story from "../../components/story/Story";
+import Product from "../product/index";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Hero />
       <Katolog />
       <Norlight />
+      <Product />
       <Brend />
       <Blok />
       <Story />

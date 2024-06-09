@@ -1,0 +1,30 @@
+.manageCategory {
+  padding-left: 300px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    p {
+      color: rgb(69, 69, 69);
+      font-family: Manrope;
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 110%;
+      letter-spacing: 0%;
+    }
+    .manageCtegory__list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      list-style: decimal;
+      li {
+        color: rgb(69, 69, 69);
+        font-family: Manrope;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 110%;
+        letter-spacing: 0%;
+      }
+    }
+  }
+}

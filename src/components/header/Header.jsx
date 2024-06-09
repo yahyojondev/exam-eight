@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FiLoader } from "react-icons/fi";
 import { HiMiniBars3CenterLeft } from "react-icons/hi2";
 import { IoSearchOutline } from "react-icons/io5";
@@ -8,9 +8,23 @@ import { BsCart } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 import { AiOutlineAlignRight } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
+import NavbarModuleSearching from "./NavbarModuleSearching";
+import axios from "axios";
 
 const Header = () => {
   const [see, setSee] = useState(false);
+  const [more, setMore] = useState("");
+  const [value, setValue] = useState("");
+  const [data, setData] = useState(null);
+
+  let API_URL = "https://dummyjson.com/products";
+  useEffect(() => {
+    if (!value.trim()) return;
+    axios
+      .get(`${API_URL}/search?q=${value.trim()}`)
+      .then((res) => setData(res.data.products))
+      .catch((err) => console.log(err));
+  }, [value]);
   return (
     <div className="navbar">
       <div className="container mediacontainer">
@@ -37,12 +51,13 @@ const Header = () => {
             </button>
             <div className="navbar__searching">
               <input
-                value={see}
-                onChange={(e) => setSee(e.target.value)}
+                value={value}
+                onChange={(e) => setValue(e.target.value)}
                 placeholder="Поиск по товарам"
                 type="text"
               />
-              {see ? <></> : <IoSearchOutline />}
+              <IoSearchOutline />
+              {value.trim() ? <NavbarModuleSearching data={data} /> : <></>}
             </div>
           </div>
           <div className="navbar__right">

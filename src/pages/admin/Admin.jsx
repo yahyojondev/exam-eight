@@ -34,7 +34,7 @@ const Admin = () => {
               </NavLink>
             </li>
             <li className="admin__list__item">
-              <NavLink to={"  manageCategory"}>
+              <NavLink to={"manageCategory"}>
                 <RiEdit2Line />
                 Manage category
               </NavLink>

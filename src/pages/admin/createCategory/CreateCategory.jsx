@@ -4,7 +4,13 @@ const CreateCategory = () => {
   return (
     <div className="createCategory">
       <div className="container">
-        <div className="createCategory__wrapper">hello</div>
+        <div className="createCategory__wrapper">
+          <p>createCategory</p>
+          <form className="category__form">
+            <input type="text" />
+            <button>Create</button>
+          </form>
+        </div>
       </div>
     </div>
   );

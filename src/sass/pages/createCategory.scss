@@ -1,3 +1,50 @@
 .createCategory {
   padding: 0px 0px 50px 300px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    p {
+      color: rgb(69, 69, 69);
+      font-family: Manrope;
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 110%;
+      letter-spacing: 0%;
+    }
+    .category__form {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      input {
+        padding: 0px 20px;
+        font-family: Manrope;
+        font-weight: 400;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        width: 400px;
+        height: 50px;
+        border-radius: 10px;
+        background: rgb(248, 248, 248);
+      }
+      input:focus {
+        border: 1px solid rgb(0, 166, 255);
+      }
+      button {
+        border: none;
+        outline: none;
+        color: rgb(255, 255, 255);
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 123%;
+        letter-spacing: 0%;
+        border-radius: 5px;
+        width: 180px;
+        height: 46px;
+        background: rgb(69, 69, 69);
+      }
+    }
+  }
 }

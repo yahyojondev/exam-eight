@@ -21,6 +21,7 @@ import ManageCategory from "./pages/admin/manageCategory/ManageCategory";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import ProductAll from "./pages/productall/ProductAll";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route path="/payment" element={<Payment />} />
           <Route path="/product" element={<Product />} />
           <Route path="/return" element={<Return />} />
+          <Route path="/productall" element={<ProductAll />} />
           <Route path="/product/:id" element={<SingleRoute />} />
           <Route path="*" element={<NotFound />} />
         </Route>
